@@ -17,6 +17,43 @@ html {
   line-height: 1.4;
 }
 
+section {
+  padding-top: 75px;
+}
+
+.menu-photos {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu-photos li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.menu-photo {
+  background-color: #000000;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+.menu-photo img {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(1);
+  height: auto;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.menu-photo img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
