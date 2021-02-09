@@ -114,7 +114,8 @@ HEADER/NAVBAR
 *************/
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/hero.jpg);
+  /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/hero.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/hero.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -238,11 +239,13 @@ SECTION ABOUT US
 }
 
 .aboutus-img:first-of-type {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/diagonal-1.jpg);
+  /* background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/diagonal-1.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/diagonal-1.jpg);
 }
 
 .aboutus-img:last-of-type {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/diagonal-2.jpg);
+  /* background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/diagonal-2.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/diagonal-2.jpg);
 }
 
 .aboutus-text {
@@ -314,7 +317,6 @@ blockquote:before {
   font-size: 400%;
   display: block;
   top: -10px;
-  /* left: -5px; */
 }
 
 /*********
@@ -326,7 +328,8 @@ CONTACT US
 }
 
 .contact-background {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/contact-image.jpg);
+  /* background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/contact-image.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/contact-image.jpg);
   height: 60vh;
   width: auto;
   filter: blur(5px);
