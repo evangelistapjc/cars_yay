@@ -11,6 +11,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/**************
+MAIN COMPONENTS 
+**************/
+
 html {
   color: #222;
   font-size: 1em;
@@ -20,6 +24,82 @@ html {
 section {
   padding-top: 75px;
 }
+
+* {
+  margin:0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  height: 5000px;
+}
+
+/*************
+NAVIGATION BAR 
+*************/
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.199);
+  background-image: linear-gradient(rgb(248, 248, 248),rgba(255, 255, 255, 0.61),rgba(236, 236, 236, 0.61));
+  width: 80%;
+  margin:100px;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  transition: 0.2s;
+}
+
+.navbar li {
+  display: inline;
+  list-style: none;
+  font-size: 16px;
+  margin-left:5px;
+  border-top: none;
+  border-bottom: none;
+  float: left;
+  width: 24.5%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color:white
+}
+
+#logo {
+  margin: 50px;
+  transition: .5s;
+}
+
+button {
+  height: 100px;
+  width: 200px;
+  background-color: rgba(197, 181, 36, 0.979);
+  margin: 200px;
+  color:white;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  float: right;
+}
+
+button:hover {
+  color: rgba(170, 248, 45, 0.842);
+}
+
+.button-reserve {
+  background-image:url("../../../highlandsfront2.jpg");
+  background-repeat: no-repeat;
+}
+
+
+/************************
+INTRODUCTION FOOD SECTION
+************************/
 
 .menu-photos {
   list-style: none;
@@ -53,6 +133,8 @@ section {
   transform: scale(1.15);
   opacity: 1;
 }
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -296,5 +378,6 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+  
 }
 
