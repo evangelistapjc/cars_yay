@@ -5,8 +5,8 @@ scrollNav = () => {                              //Hides and shows navbar
         nav.style.width = "100%";
         hideMain();
     } else {
-        nav.style.margin = "80px";
-        nav.style.width = "90%";
+        nav.style.margin = "50px 50px";
+        nav.style.width = "95%";
         showMain();
     }
 }
