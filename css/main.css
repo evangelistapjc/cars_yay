@@ -11,15 +11,186 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+/*****************
+MAIN CSS REFERENCE
+*****************/
+
+/* 
+Main Coloring: rgb(65, 151, 72); 
+*/
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  overflow-x: hidden;
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
 }
+
+/******************
+REUSABLE COMPONENTS
+******************/
 
 section {
   padding-top: 75px;
 }
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 650%;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+h2::after {
+  background-color: #000;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  margin-top: 10px;
+  width: 350px;
+  height: 1px;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+h4 {
+  font-size: 175%;
+  font-weight: 300;
+  margin-top: 25px;
+  color: rgb(65, 151, 72);
+}
+
+.large-icon {
+  text-align: center;
+  font-size: 300%;
+  display: block;
+  color: rgb(65, 151, 72);
+}
+
+.small-icon {
+  text-align: center;
+  font-size: 250%;
+}
+
+button {
+  background-color: rgb(65, 151, 72);
+  border-radius: 15px;
+  font-size: 125%;
+  height: 75px;
+  padding: 0 15px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(50, 119, 57);
+}
+
+/************
+HEADER/NAVBAR
+*************/
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/hero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.hero-text {
+  margin: 15% 0 0 15%;
+  position: absolute;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+}
+
+.hero-text h1 {
+  text-align: left;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+} 
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.199);
+  background-image: linear-gradient(rgb(248, 248, 248),rgba(255, 255, 255, 0.61),rgba(236, 236, 236, 0.61));
+  width: 90%;
+  margin: 80px;
+  overflow: hidden;
+  height: 60px;
+  /* line-height: 50px; */
+  position: fixed;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.navbar li {
+  display: inline;
+  list-style: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-top: none;
+  border-bottom: none;
+  float: left;
+  width: 24.5%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color:white
+}
+
+/*******************
+SECTION INTRODUCTION
+********************/
+
+.section-intro p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 115%;
+}
+
+.section-intro .col-12 {
+  margin-bottom: 50px;
+}
+
+.section-intro .col-12 p {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 130%;
+}
+
+/******************
+SECTION MENU PHOTOS
+*******************/
 
 .menu-photos {
   list-style: none;
@@ -52,6 +223,154 @@ section {
 .menu-photo img:hover {
   transform: scale(1.15);
   opacity: 1;
+}
+
+/***************
+SECTION ABOUT US
+****************/
+
+.aboutus-img {
+  height: 600px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutus-img:first-of-type {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/diagonal-1.jpg);
+}
+
+.aboutus-img:last-of-type {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/diagonal-2.jpg);
+}
+
+.aboutus-text {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.section-aboutus h2 {
+  margin-top: 5%;
+}
+
+.section-aboutus h2::after {
+  display: none;
+  margin: 0 auto;
+  content: "";
+  margin-top: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+.aboutus-text h3 {
+  font-weight: 100;
+  font-size: 200%;
+  margin-top: -15px;
+}
+
+.aboutus-text h3::after {
+  background-color: #000;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  margin-top: 10px;
+  width: 350px;
+  height: 1px;
+}
+
+
+.aboutus-list {
+  list-style: none;
+  font-weight: 300;
+  font-size: 110%;
+}
+
+/*******************
+SECTION TESTIMONIALS
+********************/
+
+.section-testimonials {
+  margin-bottom: 75px;
+  position: relative;
+}
+
+.testimonial-box {
+  padding-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: rgb(253, 253, 253);
+  box-shadow: 0 2px 2px #e3e3e3;
+  border-radius: 10px;
+  padding: 40px 15px 15px 15px;
+}
+
+blockquote:before {
+  position: absolute;
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  top: -10px;
+  /* left: -5px; */
+}
+
+/*********
+CONTACT US
+**********/
+
+.contact-us {
+  position: relative;
+}
+
+.contact-background {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/img/contact-image.jpg);
+  height: 60vh;
+  width: auto;
+  filter: blur(5px);
+}
+
+.contact {
+  position: absolute;
+  font-weight: bold;
+  color: #fff;
+  z-index: 2;
+  top: 50%;
+  left: 43%;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.contact-icons {
+  text-align: center;
+}
+
+.contact-icons li {
+  display: inline-block;
+  margin: 0 15px
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram,
+.ion-social-googleplus {
+    transition: color 0.3s;
+}
+
+.ion-social-facebook:hover {
+    color: #1877f2;
+}
+
+.ion-social-twitter:hover {
+    color: #1da1f2;
+}
+
+.ion-social-instagram:hover {
+    color: #c13584;
 }
 
 /*
@@ -296,5 +615,6 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+  
 }
 
